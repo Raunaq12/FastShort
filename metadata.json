@@ -1,0 +1,6 @@
+{
+  "name": "FastShort — Minimalist FastAPI URL Shortener",
+  "description": "A minimalist, lightweight URL shortener frontend built with HTML, Tailwind CSS, and standard Fetch API for FastAPI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

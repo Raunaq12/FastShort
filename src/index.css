@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+    /* Midnight Terminal Palette */
+    --bg-canvas: #0B0F19;
+    --bg-surface: #111827;
+    --bg-subtle: #1E293B;
+    --bg-row-hover: #172033;
+    --bg-input: #0F172A;
+
+    --border-subtle: #1E293B;
+    --border-strong: #334155;
+
+    --text-primary: #F8FAFC;
+    --text-secondary: #CBD5E1;
+    --text-muted: #94A3B8;
+
+    --accent-bg: #38BDF8;
+    --accent-bg-hover: #0EA5E9;
+    --accent-text: #082F49;
+
+    --status-success: #34D399;
+    --status-danger: #F87171;
+    --status-warning: #FBBF24;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.theme-canvas {
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+}
+
+.theme-surface {
+  background-color: var(--bg-surface);
+  border-color: var(--border-subtle);
+  color: var(--text-primary);
+}
+
+.theme-subtle {
+  background-color: var(--bg-subtle);
+}
+
+.theme-border {
+  border-color: var(--border-subtle);
+}
+
+.theme-border-strong {
+  border-color: var(--border-strong);
+}
+
+.theme-text-primary {
+  color: var(--text-primary);
+}
+
+.theme-text-secondary {
+  color: var(--text-secondary);
+}
+
+.theme-text-muted {
+  color: var(--text-muted);
+}
+
+.theme-text-success {
+  color: var(--status-success);
+}
+
+.theme-text-danger {
+  color: var(--status-danger);
+}
+
+.theme-text-warning {
+  color: var(--status-warning);
+}
+
+.theme-input {
+  background-color: var(--bg-input);
+  border-color: var(--border-strong);
+  color: var(--text-primary);
+}
+
+.theme-input::placeholder {
+  color: var(--text-muted);
+}
+
+.theme-input:focus {
+  border-color: var(--accent-bg);
+}
+
+.theme-btn-primary {
+  background-color: var(--accent-bg);
+  color: var(--accent-text);
+}
+
+.theme-btn-primary:hover:not(:disabled) {
+  background-color: var(--accent-bg-hover);
+}
+
+.theme-btn-secondary {
+  background-color: var(--bg-surface);
+  border-color: var(--border-strong);
+  color: var(--text-primary);
+}
+
+.theme-btn-secondary:hover:not(:disabled) {
+  background-color: var(--bg-subtle);
+}
+
+.theme-row-hover:hover {
+  background-color: var(--bg-row-hover);
+}
